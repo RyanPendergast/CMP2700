@@ -27,6 +27,8 @@ Therefore, (10011001)2 = (461)8.
 
 To convert to hexadecimal, we can group the binary digits into groups of four, starting from the right, and add leading zeroes if necessary:
 
+
+
 1001 1001
 
 Then we can convert each group of four bits into a hexadecimal digit by using the following table:

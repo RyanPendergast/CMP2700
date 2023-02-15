@@ -1,0 +1,34 @@
+(AD)Hex: This is a hexadecimal number, which means it uses the base-16 number system. Hexadecimal numbers use 16 distinct symbols,
+usually the numbers 0-9 and the letters A-F. In this case, the number is AD.
+
+(?)2: This is asking for the conversion of the hexadecimal number into a binary number, which uses the base-2 number system. Binary 
+numbers only use two symbols, usually 0 and 1.
+
+(?)10: This is asking for the conversion of the hexadecimal number into a decimal number, which uses the base-10 number system. 
+Decimal numbers use 10 distinct symbols, the numbers 0-9.
+
+To convert from hexadecimal to binary, we can use the following steps:
+
+Convert each hexadecimal digit to its 4-bit binary equivalent.
+Group the binary digits into sets of four, starting from the right-hand side of the number.
+If necessary, add leading zeros to the left-hand side of the number to make the groups of four digits.
+Let's apply these steps to (AD)Hex:
+A = 1010
+D = 1101
+
+So, (AD)Hex in binary is:
+1010 1101
+
+To convert from hexadecimal to decimal, we can use the following steps:
+
+Write down the hexadecimal number.
+Multiply each digit of the number by 16 raised to the power of its position, starting from 0 on the right-hand side.
+Add the products from step 2 together to get the decimal equivalent.
+Let's apply these steps to (AD)Hex:
+A = 10
+D = 13
+
+So, (AD)Hex in decimal is:
+10 * 16^1 + 13 * 16^0 = 173
+
+Therefore, (AD)Hex = (10101101)2 = (173)10.

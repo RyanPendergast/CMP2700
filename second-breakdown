@@ -1,0 +1,28 @@
+(24)7     = (  ? )10    = ( ? )2 
+
+The number (24)7 means that the number 24 is written in base 7. To convert this to base 10 (decimal), we need to evaluate
+the value of the number in powers of 7. We start with the rightmost digit, which represents the units place, and then work our way to the left.
+
+To convert (24)7 to base 10, we can use the following formula:
+
+(24)7 = 27^1 + 47^0
+
+Here, the rightmost digit "4" is multiplied by 7^0 (which is 1), giving us 4. The digit to the left of that, "2", is multiplied by 7^1 (which is 7), 
+giving us 14. Adding these two values together, we get:
+
+(24)7 = 27^1 + 47^0 = 14 + 4 = 18
+
+Therefore, the number (24)7 is equivalent to the decimal number 18.
+
+To convert this decimal number to binary (base 2), we can use a similar process of successive division by 2. Here are the steps:
+
+Divide 18 by 2. The quotient is 9 and the remainder is 0.
+Divide 9 by 2. The quotient is 4 and the remainder is 1.
+Divide 4 by 2. The quotient is 2 and the remainder is 0.
+Divide 2 by 2. The quotient is 1 and the remainder is 0.
+Divide 1 by 2. The quotient is 0 and the remainder is 1.
+Now, we read off the remainders from the bottom to the top to get the binary representation:
+
+18 = (10010)2
+
+Therefore, (24)7 is equivalent to (10010)2 in binary.

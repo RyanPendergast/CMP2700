@@ -1,0 +1,54 @@
+( 10011001)2      =  ( ? )8      =  (?)16
+
+To convert (10011001)2 to octal and hexadecimal:
+
+First, we can group the binary digits into groups of three, starting from the right, and add leading zeroes if necessary:
+
+(100) 110 01
+
+Then we can convert each group of three bits into an octal digit by using the following table:
+
+Binary - Octal
+
+000 - 0
+001 - 1
+010 - 2
+011 - 3
+100 - 4
+101 - 5
+110 - 6
+111 - 7
+
+So, in this case, we have:
+
+(100) 110 01 = 4 6 1
+
+Therefore, (10011001)2 = (461)8.
+
+To convert to hexadecimal, we can group the binary digits into groups of four, starting from the right, and add leading zeroes if necessary:
+
+1001 1001
+
+Then we can convert each group of four bits into a hexadecimal digit by using the following table:
+
+Binary - Hexidecimal
+
+0000 - 0
+0001 - 1
+0010 - 2
+0011 - 3
+0100 - 4
+0101 - 5
+0110 - 6
+0111 - 7 
+1000 - 8
+1001 - 9
+1010 - A
+1011 - B
+1100 - C
+1101 - D
+1110 - E
+1111 - F
+
+1001 1001 = 9 9 
+Therefor (1001100)2 = (99)16

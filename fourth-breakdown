@@ -1,0 +1,40 @@
+(334.2301)10       =  ( ? )2
+
+Converting a decimal number to binary involves two steps. The integer part and the fractional part of the number need to be converted separately.
+
+For the integer part, we repeatedly divide by 2 and keep track of the remainders until the quotient becomes zero. Then we write the remainders in reverse order to get the binary representation.
+
+For the fractional part, we repeatedly multiply by 2 and write down the integer part of the result. We keep doing this until the fractional part becomes zero, or until we reach a desired level of precision.
+
+So, let's apply this method to the given decimal number:
+
+Integer part:
+
+334 / 2 = 167, remainder = 0
+167 / 2 = 83, remainder = 1
+83 / 2 = 41, remainder = 1
+41 / 2 = 20, remainder = 1
+20 / 2 = 10, remainder = 0
+10 / 2 = 5, remainder = 0
+5 / 2 = 2, remainder = 1
+2 / 2 = 1, remainder = 0
+1 / 2 = 0, remainder = 1
+
+The remainders in reverse order are 101001110. This is the binary representation of the integer part.
+
+Fractional part:
+
+0.2301 * 2 = 0.4602 -> 0
+0.4602 * 2 = 0.9204 -> 0
+0.9204 * 2 = 1.8408 -> 1
+0.8408 * 2 = 1.6816 -> 1
+0.6816 * 2 = 1.3632 -> 1
+0.3632 * 2 = 0.7264 -> 0
+0.7264 * 2 = 1.4528 -> 1
+0.4528 * 2 = 0.9056 -> 0
+
+The integer part of each multiplication is written in order to obtain the binary representation of the fractional part, which is 00111010.
+
+Putting the two parts together, we get:
+
+(334.2301)10 = (101001110.00111010)2

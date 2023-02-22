@@ -1,0 +1,66 @@
+USe the booth alogrithm to multiply 23 (multiplicand) by 29 (multipler) where each
+number is represented usign 6 bits. 
+
+First, we need to represent 23 and 29 in binary using 6 bits.
+
+23 in binary: 010111
+29 in binary: 011101
+
+Next, we need to add an extra bit to the left of the multiplicand (23) to make the number of bits even. This bit is called the "sign bit" and will be used to keep track of whether the partial product needs to be added or subtracted from the accumulator. Since we are using 6 bits, the new binary representation of 23 becomes:
+
+010111 (multiplicand)
+
+000000 (sign bit)
+0101110 (new multiplicand)
+
+Now we can start applying Booth's algorithm:
+
+Initialize the accumulator to 0 and set the multiplier (29) to a register:
+Accumulator: 000000
+Multiplier: 011101
+
+We will use a loop to perform the multiplication. In each iteration, we will examine the last two bits of the register containing the multiplier (Multipler), and take one of three actions:
+
+If the last two bits are 01, we subtract the multiplicand (23) from the accumulator and shift right the register.
+If the last two bits are 10, we add the multiplicand (23) to the accumulator and shift right the register.
+If the last two bits are 00 or 11, we only shift right the register.
+We repeat this process until we have shifted all the bits in the register.
+
+The initial state of the register is:
+
+0 1 1 1 0 1 (last 6 bits of Multiplier)
+
+The last two bits are 01, so we subtract the multiplicand (23) from the accumulator (which is initially 0), and shift right the register:
+
+Accumulator: 0 - 0101110 = 1010010 (in binary)
+Multiplier: 00 1 1 1 0 1 (last 6 bits after shifting right)
+
+We have now completed the first iteration.
+
+The second iteration:
+
+The last two bits are 10, so we add the multiplicand (23) to the accumulator and shift right the register:
+
+Accumulator: 1010010 + 0101110 = 1110000 (in binary)
+Multiplier: 000 1 1 1 0 1 (last 6 bits after shifting right)
+
+Third iteration:
+
+The last two bits are 01, so we subtract the multiplicand (23) from the accumulator and shift right the register:
+
+Accumulator: 1110000 - 0101110 = 1000010 (in binary)
+Multiplier: 0000 1 1 1 0 1 (last 6 bits after shifting right)
+
+Fourth iteration:
+
+The last two bits are 00, so we only shift right the register:
+
+Accumulator: 1000010 (unchanged)
+Multiplier: 00000 1 1 1 0 1 (last 6 bits after shifting right)
+
+Fifth iteration:
+
+The last two bits are 11, so we only shift right the register:
+
+Accumulator: 1000010 (unchanged)
+Multiplier: 000000 1 1 1 0 1 (last 6 bits after shifting right)

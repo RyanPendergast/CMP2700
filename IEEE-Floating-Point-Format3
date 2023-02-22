@@ -1,0 +1,45 @@
+Step 1: Convert 1/16 to binary.
+
+To convert 1/16 to binary, we can use the algorithm of successive multiplication by 2. We multiply 1/16 by 2, then take the integer part as the first binary digit to the right of the binary point. We repeat this process with the fractional part until we get the desired number of binary digits.
+
+1/16 x 2 = 0.0625
+0.0625 x 2 = 0.125
+0.125 x 2 = 0.25
+0.25 x 2 = 0.5
+0.5 x 2 = 1.0
+
+So the binary representation of 1/16 is 0.0001.
+
+Step 2: Determine the sign bit.
+
+Since 1/16 is positive, the sign bit is 0.
+
+Step 3: Normalize the binary number.
+
+To normalize the binary number, we need to shift the binary point to the left until there is a single 1 to the left of the binary point.
+
+0.0001 can be normalized as follows: 1.0000 x 2^-4.
+
+Step 4: Determine the exponent.
+
+The exponent is the power of 2 by which the binary point was shifted during normalization. In this case, the binary point was shifted 4 positions to the right, so the exponent is -4.
+
+Step 5: Convert the exponent to binary.
+
+The exponent in binary is -4 + 127 = 123 in decimal.
+
+123 in binary is 01111011.
+
+Step 6: Determine the mantissa.
+
+The mantissa is the binary digits to the right of the binary point in the normalized binary number. In this case, the mantissa is 00000000000000000000000.
+
+Step 7: Combine the sign bit, exponent, and mantissa.
+
+The 32-bit IEEE floating-point format has 1 sign bit, 8 exponent bits, and 23 mantissa bits.
+
+The sign bit is 0, the exponent in binary is 01111011, and the mantissa is 00000000000000000000000.
+
+So the IEEE 32-bit floating-point representation of 1/16 is:
+
+0 01111011 00000000000000000000000

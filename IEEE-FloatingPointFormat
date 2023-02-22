@@ -1,0 +1,3 @@
+express the follwong numbers in IEEE 32-bit floating-point format: -5
+
+Since -5 is negative, the sign bit should be 1.

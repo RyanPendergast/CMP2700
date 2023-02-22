@@ -1,0 +1,48 @@
+Express the following numbers in IEEE 32-bit floating-point format: -1.5
+
+Step 1: Convert -1.5 to binary.
+
+To convert -1.5 to binary, we can convert the absolute value of 1.5 to binary and then take the two's complement to represent it as a negative number.
+
+The integer part of 1.5 in binary is 1, and the fractional part is 0.5, which can be converted to binary by multiplying it by 2 repeatedly until the fractional part becomes 0 or repeats. This gives us:
+
+0.5 x 2 = 1.0 (integer bit is 1, fractional part is 0)
+1.0 x 2 = 0.0 (integer bit is 0, fractional part is 0)
+
+So the binary representation of 1.5 is 1.1.
+
+To represent -1.5 in binary, we can take the two's complement of 1.1. Since there are only 2 bits, we can represent -1.5 as 1.1011 in binary.
+
+Step 2: Determine the sign bit.
+
+Since -1.5 is negative, the sign bit is 1.
+
+Step 3: Normalize the binary number.
+
+To normalize the binary number, we need to shift the binary point to the left until there is a single 1 to the left of the binary point.
+
+1.1011 can be normalized as follows: 1.1011 x 2^0.
+
+Step 4: Determine the exponent.
+
+The exponent is the power of 2 by which the binary point was shifted during normalization. In this case, the binary point was not shifted, so the exponent is 0.
+
+Step 5: Convert the exponent to binary.
+
+The exponent in binary is 0 + 127 = 127 in decimal.
+
+127 in binary is 01111111.
+
+Step 6: Determine the mantissa.
+
+The mantissa is the binary digits to the right of the binary point in the normalized binary number. In this case, the mantissa is 10110000000000000000000.
+
+Step 7: Combine the sign bit, exponent, and mantissa.
+
+The 32-bit IEEE floating-point format has 1 sign bit, 8 exponent bits, and 23 mantissa bits.
+
+The sign bit is 1, the exponent in binary is 01111111, and the mantissa is 10110000000000000000000.
+
+So the IEEE 32-bit floating-point representation of -1.5 is:
+
+1 01111111 10110000000000000000000

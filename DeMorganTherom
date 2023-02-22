@@ -1,0 +1,10 @@
+F = (NOT(V+A+L))
+
+NOT(F) = NOT(NOT(V+A+L))
+NOT(F) = V+A+L
+NOT(F) = V | A | L
+
+F = (NOT A+NOT B+NOT C+ NOT D)
+NOT(F) = NOT(NOT A+NOT B+NOT C+ NOT D)
+NOT(F) = A & B & C & D
+

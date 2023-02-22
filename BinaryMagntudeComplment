@@ -1,0 +1,31 @@
+ Represent the following decimal numbers in both binary sing/magnitude and two complement using 17 bits:
+ +512; -29.
+ 
+ Divide 512 by 2, and write down the quotient and remainder: 256 remainder 0
+Divide 256 by 2, and write down the quotient and remainder: 128 remainder 0
+Divide 128 by 2, and write down the quotient and remainder: 64 remainder 0
+Divide 64 by 2, and write down the quotient and remainder: 32 remainder 0
+Divide 32 by 2, and write down the quotient and remainder: 16 remainder 0
+Divide 16 by 2, and write down the quotient and remainder: 8 remainder 0
+Divide 8 by 2, and write down the quotient and remainder: 4 remainder 0
+Divide 4 by 2, and write down the quotient and remainder: 2 remainder 0
+Divide 2 by 2, and write down the quotient and remainder: 1 remainder 0
+Divide 1 by 2, and write down the quotient and remainder: 0 remainder 1
+So the binary representation of 512 is 1000000000.
+
+Since +512 is positive, we set the leftmost bit to 0, so the sign/magnitude representation of +512 in 17 bits is:
+
+0 1000000000000000
+
+
+
+The binary representation of 29 is 00011101
+Since -29 is negative, we set the leftmost bit to 1, so the sign/magnitude representation of -29 in 17 bits is:
+1 0001110100000000
+The binary representation of 29 is 00011101, so the inverted binary representation is 11100010. To get the
+two's complement representation, we add 1 to the inverted binary representation:
+11100011
+
+1 1110001100000000
+
+

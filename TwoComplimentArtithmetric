@@ -1,0 +1,12 @@
+Find the differences between the numbers 111000 and -110011 using two complement arithmetric
+
+Invert bits in -110011 which results to 001100
+Add +1 to the result
+It gives us 0011001
+Therefore, the two compliment representation of -110011 is 1101101
+
+111000
+1101101
+________ +
+10001001
+

@@ -1,0 +1,37 @@
+The follwoing numbers use the IEEE 32-bit floating-point format. What is the 
+equivalent decimal value?
+0 01111110 10100000000000000000000
+
+The sign bit is 0, which means the number is positive.
+The exponent is 01111110, which is 126 in decimal after subtracting the bias of 127.
+The mantissa is 10100000000000000000000 in binary.
+To calculate the decimal value of this number, we first need to convert the mantissa to decimal by summing the values of each bit position, where each bit position represents a negative power of 2. The first bit to the right of the binary point has a value of 1/2, the second bit has a value of 1/4, the third bit has a value of 1/8, and so on.
+
+In this case, the binary mantissa is 10100000000000000000000, which gives us:
+
+1/2 + 1/16 = 0.5625
+
+Next, we need to use the exponent to scale this value. Since the exponent is positive, we multiply the mantissa by 2^(exponent - bias), where the bias is 127 for single-precision floating-point numbers.
+
+2^(126 - 127) = 2^(-1) = 1/2
+
+So the decimal value of this number is:
+
+0.5625 x 1/2 = 0.28125
+
+Therefore, the equivalent decimal value of 0 01111110 10100000000000000000000 is 0.28125.
+
+________________________________________________________________________________________
+
+0 10000000 00000000000000000000000
+
+The sign bit is 1, which means the number is negative.
+The exponent is 10000000, which is 128 in decimal after subtracting the bias of 127.
+The mantissa is 00000000000000000000000 in binary
+
+However, there is a special case in the IEEE 754 standard where an exponent of all 1's and a
+mantissa of all 0's represents either positive or negative infinity, depending on the sign bit.
+In this case, the exponent is 10000000, which is all 1's, and the mantissa is all 0's. Therefore,
+the number represented by 0 10000000 00000000000000000000000 is negative infinity.
+
+So the equivalent decimal value of 0 10000000 00000000000000000000000 is negative infinity.
